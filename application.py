@@ -3,10 +3,10 @@ from flask import *
 
 import sqlite3
 from datetime import date
-import xlwt
-from xlwt import Workbook
+#import xlwt
+#from xlwt import Workbook
 import pandas as pd
-import stat
+#import stat
 app = Flask(__name__)
 
 @app.route("/")

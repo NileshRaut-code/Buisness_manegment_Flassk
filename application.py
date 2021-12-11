@@ -59,9 +59,9 @@ def student_info():
     cursor = connection.cursor()
     cursor.execute("select * from Student_Info")
     rows = cursor.fetchall()
-    df = pd.read_sql_query("SELECT * from Student_Info", connection)
+    #df = pd.read_sql_query("SELECT * from Student_Info", connection)
 
-    df.to_excel('custmer.xls')
+    #df.to_excel('custmer.xls')
 
     return render_template("student_info.html",rows = rows)
 

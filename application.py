@@ -129,7 +129,7 @@ def stock():
     cursor.execute("select quantity from Student_Info")
     rows = cursor.fetchall()
     df = pd.read_sql_query("SELECT quantity from Student_Info", connection)
-    df.to_excel('quantity.xls')
+    df.to_excel('/quantity.xls')
     result=df.sum()
     return render_template('stock.html',msg=result)
 
